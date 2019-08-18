@@ -9,7 +9,14 @@ spring:
   profiles: dev  #开发环境
   application:
     name: spring-cloud-config-dev
+server:
+  port: 8889
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+      
 ---
 
 spring:
